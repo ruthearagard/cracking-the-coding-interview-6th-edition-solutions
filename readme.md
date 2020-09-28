@@ -1,10 +1,23 @@
-
 Cracking the Coding Interview, 6th Edition (#ISBN-13 978-0984782857) solutions  
 ============================================================================== 
   
-The contents of this repository are under the [Creative Commons CC0.](https://creativecommons.org/share-your-work/public-domain/cc0/)
-  
-I will not accept pull requests, they will be rejected and otherwise go unanswered.
+<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  <br />
+  To the extent possible under law,
+  <a rel="dct:publisher"
+     href="https://github.com/ruthearagard/cracking-the-coding-interview-6th-edition-solutions">
+    <span property="dct:title">Michael Rodriguez</span></a>
+  has waived all copyright and related or neighboring rights to
+  <span property="dct:title">Cracking the Coding Interview, 6th Edition (#ISBN-13 978-0984782857) solutions</span>.
+This work is published from:
+<span property="vcard:Country" datatype="dct:ISO3166"
+      content="US" about="https://github.com/ruthearagard/cracking-the-coding-interview-6th-edition-solutions">
+  United States</span>.
+</p>
 
 Language of Choice
 ------------------------
