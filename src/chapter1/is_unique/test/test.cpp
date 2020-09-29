@@ -11,7 +11,10 @@ namespace
 
     TEST(OptimizedAlgorithm, ProducesValidResults)
     {
-        EXPECT_FALSE(brute_force("ABCDEFGG"));
-        EXPECT_TRUE(brute_force("ABCDEFG"));
+        char malformed[] = "ABCDEFGG";
+        char valid[]     = "ABCDEFG";
+
+        EXPECT_FALSE(optimized(malformed));
+        EXPECT_TRUE(optimized(valid));
     }
 }
