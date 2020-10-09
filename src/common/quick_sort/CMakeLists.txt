@@ -11,4 +11,15 @@
 # with this software. If not, see
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-add_subdirectory(is_unique)
+set(SRCS quick_sort.c)
+set(HDRS quick_sort.h)
+
+add_library(quick_sort STATIC ${SRCS} ${HDRS})
+
+set_target_properties(quick_sort PROPERTIES
+                      C_STANDARD 11
+                      C_STANDARD_REQUIRED YES
+                      C_EXTENSIONS OFF)
+
+target_compile_options(quick_sort PRIVATE -Wall -Werror -Wextra)
+add_subdirectory(test)

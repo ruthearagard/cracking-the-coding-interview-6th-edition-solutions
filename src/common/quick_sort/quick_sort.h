@@ -11,23 +11,20 @@
 // with this software. If not, see
 // <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-#include "gtest/gtest.h"
-#include "../is_unique.h"
+#ifndef CTCI_QUICK_SORT_H
+#define CTCI_QUICK_SORT_H
 
-namespace
+#ifdef __cplusplus
+extern "C"
 {
-    TEST(BruteforceAlgorithm, ProducesValidResults)
-    {
-        EXPECT_FALSE(brute_force("ABCDEFGG"));
-        EXPECT_TRUE(brute_force("ABCDEFG"));
-    }
+#endif // __cplusplus
 
-    TEST(OptimizedAlgorithm, ProducesValidResults)
-    {
-        char malformed[] = "ABCDEFGG";
-        char valid[]     = "ABCDEFG";
+void ctci_quick_sort(int array[],
+                     const unsigned int lo,
+                     const unsigned int hi);
 
-        EXPECT_FALSE(optimized(malformed));
-        EXPECT_TRUE(optimized(valid));
-    }
+#ifdef __cplusplus
 }
+#endif // __cplusplus
+
+#endif // CTCI_QUICK_SORT_H

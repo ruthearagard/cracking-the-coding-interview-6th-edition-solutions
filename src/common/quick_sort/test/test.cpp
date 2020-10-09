@@ -11,23 +11,25 @@
 // with this software. If not, see
 // <http://creativecommons.org/publicdomain/zero/1.0/>.
 
+#include <array>
+#include <iostream>
 #include "gtest/gtest.h"
-#include "../is_unique.h"
+#include "../quick_sort.h"
 
 namespace
 {
-    TEST(BruteforceAlgorithm, ProducesValidResults)
+    TEST(QuickSortTest, AscendingOrder)
     {
-        EXPECT_FALSE(brute_force("ABCDEFGG"));
-        EXPECT_TRUE(brute_force("ABCDEFG"));
-    }
+        std::array numbers =
+        {
+            1, 8, 2, 5, 9, 8, 17, 29, 11, 3
+        };
 
-    TEST(OptimizedAlgorithm, ProducesValidResults)
-    {
-        char malformed[] = "ABCDEFGG";
-        char valid[]     = "ABCDEFG";
-
-        EXPECT_FALSE(optimized(malformed));
-        EXPECT_TRUE(optimized(valid));
+	static constexpr std::array sorted =
+        {
+            1, 2, 3, 5, 8, 8, 9, 11, 17, 29
+        };
+        ctci_quick_sort(numbers.data(), 0, numbers.size() - 1);
+        EXPECT_TRUE(numbers == sorted);
     }
 }

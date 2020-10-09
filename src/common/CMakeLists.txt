@@ -11,4 +11,4 @@
 # with this software. If not, see
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-add_subdirectory(is_unique)
+add_subdirectory(quick_sort)
